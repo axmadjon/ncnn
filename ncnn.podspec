@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/axmadjon/ncnn.git", :tag => "0.1.0" }
+  spec.source       = { :git => "https://github.com/axmadjon/ncnn.git", :branch => "0.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,7 +94,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
-  # spec.public_header_files = "Classes/**/*.h"
+  spec.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -109,7 +109,7 @@ Pod::Spec.new do |spec|
   # spec.resources = "Resources/*.png"
 
   spec.preserve_paths = "ncnn.framework"
-  spec.source_files = "ncnn/Versions/A/Headers/**/*.h"
+  spec.source_files = "ncnn.framework/Versions/A/Headers/**/*.h"
   spec.public_header_files = "ncnn.framework/Versions/A/Headers/**/*.h"
   spec.vendored_frameworks = "ncnn.framework"
   spec.header_dir = "ncnn"
@@ -136,6 +136,9 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = false
+  
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  spec.swift_version = '5.0'
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
