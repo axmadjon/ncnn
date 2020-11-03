@@ -108,12 +108,12 @@ Pod::Spec.new do |spec|
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
 
-  spec.preserve_paths = "ncnn.framework"
-  spec.source_files = "ncnn.framework/Versions/A/Headers/**/*.h"
-  spec.public_header_files = "ncnn.framework/Versions/A/Headers/**/*.h"
-  spec.vendored_frameworks = "ncnn.framework"
-  spec.header_dir = "ncnn"
-  spec.header_mappings_dir = "ncnn.framework/Versions/A/Headers/"
+  # spec.preserve_paths = "ncnn.framework"
+  # spec.source_files = "ncnn.framework/Versions/A/Headers/**/*.h"
+  # spec.public_header_files = "ncnn.framework/Versions/A/Headers/**/*.h"
+  # spec.vendored_frameworks = "ncnn.framework"
+  # spec.header_dir = "ncnn"
+  # spec.header_mappings_dir = "ncnn.framework/Versions/A/Headers/"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
