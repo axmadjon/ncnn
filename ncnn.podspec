@@ -113,7 +113,7 @@ Pod::Spec.new do |spec|
   spec.public_header_files = "ncnn.framework/Versions/A/Headers/**/*.h"
   spec.vendored_frameworks = "ncnn.framework"
   spec.header_dir = "ncnn"
-  spec.header_mappings_dir = "ncnn.framework/Versions/A/Headers/*"
+  spec.header_mappings_dir = "ncnn.framework/Versions/A/Headers/"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
