@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ncnn"
-  spec.version      = "0.1.0"
+  spec.version      = "0.2.0"
   spec.summary      = "A short description of ncnn."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/axmadjon/ncnn.git", :branch => "0.1.0" }
+  spec.source       = { :git => "https://github.com/axmadjon/ncnn.git", :tag => "0.2.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
