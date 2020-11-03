@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ncnn"
-  spec.version      = "0.1.0"
+  spec.version      = "0.2.0"
   spec.summary      = "A short description of ncnn."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,8 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                   ncnn for ios framework
+	ncnn for ios framework
+                   DESC
 
   spec.homepage     = "https://github.com/Tencent/ncnn"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Tencent/ncnn/releases/download/20200916/openmp.framework.zip", :tag => "#{20200916}" }
+  spec.source       = { :git => "https://github.com/axmadjon/ncnn/releases/download/0.1.0/ncnn.framework.zip", :tag => "0.2.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
