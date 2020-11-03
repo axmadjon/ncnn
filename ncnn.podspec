@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/axmadjon/ncnn/releases/download/0.1.0/ncnn.framework.zip", :tag => "0.1.0" }
+  spec.source       = { :git => "https://github.com/axmadjon/ncnn.git", :tag => "0.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -109,11 +109,11 @@ Pod::Spec.new do |spec|
   # spec.resources = "Resources/*.png"
 
   spec.preserve_paths = "ncnn.framework"
-  spec.source_files = "ncnn.framework/Versions/A/Headers/**/*.h"
+  spec.source_files = "ncnn/Versions/A/Headers/**/*.h"
   spec.public_header_files = "ncnn.framework/Versions/A/Headers/**/*.h"
   spec.vendored_frameworks = "ncnn.framework"
   spec.header_dir = "ncnn"
-  spec.header_mappings_dir = "ncnn.framework/Versions/A/Headers/"
+  spec.header_mappings_dir = "ncnn.framework/Versions/A/Headers/*"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
